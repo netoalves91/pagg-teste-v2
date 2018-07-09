@@ -3,15 +3,83 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pagg Teste</title>
+    <title></title>
 
   </header>
   <body>
     <div class="container-fluid">
-      <div class="col-xs-6 example">
-          <div class="col-sm-6">
-            <h1 class="xx">olar</h1>
+      <div class="col-sm-12 example">
+        <form class="register-form" action="index.html" method="post">
+
+          <div class="col-sm-4 first-form">
+
+            <div class="col-sm-12 logo-box">
+              <img src="img-shared.png" alt="logo" class="img-responsive">
+            </div>
+
+            <div class="col-sm-12 input-box">
+              <select class="register-input" name="how_it">
+                <option>Como conheceu?...</option>
+                <option>Redes Sociais</option>
+                <option>Tv</option>
+                <option>Indicação de Amigos</option>
+              </select>
+            </div>
+
+            <div class="col-sm-12 input-box">
+              <input type="email" name="email" placeholder="Email" class="register-input">
+            </div>
+
+            <div class="col-sm-12 input-box">
+              <input type="email" name="confirm_email" placeholder="Confirmar email" class="register-input">
+            </div>
+
+            <div class="col-sm-12 input-box">
+              <input type="password" name="userid" placeholder="Senha" id="pass" class="register-input">
+            </div>
+
+            <div class="col-sm-12 input-box">
+              <input type="password" name="psw" placeholder="Confirmar Senha" class="register-input confirm-pass">
+            </div>
+
+            <div class="col-sm-12 input-box radio-box">
+              <input type="radio" name="fisical" value="fisic" class="register-radio radio-pf"> Pessoa Física<br>
+              <input type="radio" name="fisical" value="juridic" class="register-radio radio-pj"> Pessoa Jurídica<br>
+            </div>
+
           </div>
+
+          <div class="col-sm-8 others-forms-box">
+
+            <div class="col-sm-12 others-form pf-form">
+              <h1>pf form</h1>
+              <div class="col-sm-6 input-box">
+                <input type="text" name="fisic_name" placeholder="Nome completo" class="register-input">
+              </div>
+              <div class="col-sm-6 input-box">
+                <input type="text" name="cpf" placeholder="Cpf" class="register-input">
+              </div>
+              <div class="col-sm-6 input-box">
+                  <input type="text" id="xxx" name="cel" placeholder="Celular" class="register-input">
+              </div>
+              <div class="col-sm-6 input-box">
+                  <input type="text" name="phone" placeholder="Telefone dixo" class="register-input">
+              </div>
+              <div class="col-sm-6 input-box">
+                  <input type="text" name="cep" placeholder="Cep" class="register-input">
+              </div>
+              <div class="col-sm-6 input-box">
+                  <input type="text" name="ativity" placeholder="Ramo de atividade" class="register-input">
+              </div>
+            </div>
+
+            <div class="col-sm-12 others-form pj-form">
+              <h1>pj form</h1>
+            </div>
+
+          </div>
+
+        </form>
       </div>
     </div>
 

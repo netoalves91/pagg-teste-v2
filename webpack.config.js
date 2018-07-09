@@ -15,13 +15,19 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'src')
   },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.sass$/,
         use: [
           'style-loader',
           'css-loader',
           'sass-loader',
         ]
-    }]
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
   }
 };

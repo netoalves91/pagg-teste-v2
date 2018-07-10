@@ -1,50 +1,50 @@
 <html>
   <header>
-
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+
+    <title>Pagg Teste</title>
 
   </header>
   <body>
     <div class="container-fluid">
-      <div class="col-sm-12 example">
+      <div class="col-sm-12 form-box-external">
         <form class="register-form" action="index.html" method="post">
 
-          <div class="col-sm-4 first-form">
+          <div class="col-sm-4 col-xs-12 first-form">
 
             <div class="col-sm-12 logo-box">
-              <img src="img-shared.png" alt="logo" class="img-responsive">
+              <img src="img-share.png" alt="logo" class="img-responsive logo-first">
             </div>
 
-            <div class="col-sm-12 input-box">
+            <div class="col-sm-12 input-box register-input">
               <select class="register-input" name="how_it">
-                <option>Como conheceu?...</option>
-                <option>Redes Sociais</option>
-                <option>Tv</option>
-                <option>Indicação de Amigos</option>
+                <option>Como conheceu a paggcerto?</option>
+                <option value="sociais">Redes Sociais</option>
+                <option value="tv">Tv</option>
+                <option value="indicacao">Indicação de Amigos</option>
               </select>
             </div>
 
             <div class="col-sm-12 input-box">
-              <input type="email" name="email" placeholder="Email" class="register-input">
+              <input type="email" name="email" placeholder="Email" id="email" class="register-input">
             </div>
 
             <div class="col-sm-12 input-box">
-              <input type="email" name="confirm_email" placeholder="Confirmar email" class="register-input">
+              <input type="email" name="confirmação de email" placeholder="Confirmar email" class="register-input confirm-email">
             </div>
 
             <div class="col-sm-12 input-box">
-              <input type="password" name="userid" placeholder="Senha" id="pass" class="register-input">
+              <input type="password" name="senha" placeholder="Senha" id="pass" class="register-input">
             </div>
 
             <div class="col-sm-12 input-box">
-              <input type="password" name="psw" placeholder="Confirmar Senha" class="register-input confirm-pass">
+              <input type="password" name="confirmação de senha" placeholder="Confirmar Senha" class="register-input confirm-pass">
             </div>
 
             <div class="col-sm-12 input-box radio-box">
-              <input type="radio" name="fisical" value="fisic" class="register-radio radio-pf"> Pessoa Física<br>
-              <input type="radio" name="fisical" value="juridic" class="register-radio radio-pj"> Pessoa Jurídica<br>
+              <input type="radio" name="fisical" value="fisic" class="register-radio radio-pf"> <span class="radio-span">Pessoa Física</span><br>
+              <input type="radio" name="fisical" value="juridic" class="register-radio radio-pj"> <span class="radio-span">Pessoa Jurídica</span><br>
             </div>
 
           </div>
@@ -52,29 +52,105 @@
           <div class="col-sm-8 others-forms-box">
 
             <div class="col-sm-12 others-form pf-form">
-              <h1>pf form</h1>
+
+              <h1 class="other-form-title">Pessoa Física</h1>
+
               <div class="col-sm-6 input-box">
-                <input type="text" name="fisic_name" placeholder="Nome completo" class="register-input">
+                <input type="text" name="nome" placeholder="Nome completo" class="register-input">
               </div>
+
               <div class="col-sm-6 input-box">
                 <input type="text" name="cpf" placeholder="Cpf" class="register-input">
               </div>
+
               <div class="col-sm-6 input-box">
-                  <input type="text" id="xxx" name="cel" placeholder="Celular" class="register-input">
+                  <input type="text" name="celular" id="cel" placeholder="Celular" class="register-input">
               </div>
               <div class="col-sm-6 input-box">
-                  <input type="text" name="phone" placeholder="Telefone dixo" class="register-input">
+                  <input type="text" name="telefone" placeholder="Telefone dixo" class="register-input">
               </div>
+
               <div class="col-sm-6 input-box">
-                  <input type="text" name="cep" placeholder="Cep" class="register-input">
+                  <input type="text" name="cep" placeholder="Cep" id="cep" class="register-input">
               </div>
+
               <div class="col-sm-6 input-box">
-                  <input type="text" name="ativity" placeholder="Ramo de atividade" class="register-input">
+                  <input type="text" name="complemento" placeholder="Complemento"  class="register-input">
               </div>
+
+              <div class="col-sm-6 input-box">
+                  <input type="text" name="atividade" placeholder="Ramo de atividade" class="register-input">
+              </div>
+
+              <div class="col-sm-6 radio-box radio-box-second">
+                <input type="radio" name="sexo" value="male" class="register-radio"> <span class="radio-span">Masculino</span><br>
+                <input type="radio" name="sexo" value="female" class="register-radio"> <span class="radio-span">Feminino</span><br>
+              </div>
+
             </div>
 
             <div class="col-sm-12 others-form pj-form">
-              <h1>pj form</h1>
+              <h1 class="other-form-title">Pessoa Jurídica</h1>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="razao social" placeholder="Razão social" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="nome fantasia" placeholder="Nome fantasia" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <select class="register-input" name="how_it">
+                  <option>Tipo da empresa</option>
+                  <option>MEI</option>
+                  <option>EI</option>
+                  <option>ME</option>
+                  <option>EPP</option>
+                </select>
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="cnpj" placeholder="cnpj" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="atividade" placeholder="Ramo de atividade" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="cep" placeholder="cep" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="complemento" placeholder="complemento" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="celular" placeholder="Celular" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="telefone" placeholder="Telefone Fixo" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="nome do admnistrador" placeholder="Nome do admnistrador" class="register-input">
+              </div>
+
+              <div class="col-sm-6 input-box">
+                <input type="text" name="data de nascimento" placeholder="Data de nascimento" class="register-input">
+              </div>
+
+              <div class="col-sm-6 radio-box radio-box-second">
+                <input type="radio" name="sexo" value="male" class="register-radio"> <span class="radio-span">Masculino</span><br>
+                <input type="radio" name="sexo" value="female" class="register-radio"> <span class="radio-span">Feminino</span><br>
+              </div>
+
+            </div>
+
+            <div class="col-sm-11 button-box">
+              <input type="submit" name="Cadastrar" value="Cadastrar" class="register-button">
             </div>
 
           </div>

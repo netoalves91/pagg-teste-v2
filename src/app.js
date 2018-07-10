@@ -1,13 +1,14 @@
 import joao from './bootstrap.min.css';
 import styles from './stylesheet.sass';
 
-console.log('webpack funcionando')
 
 $(".others-form").hide();
 
+$(".button-box").hide();
 
 $(".register-radio").click(function(){
   var x = $(this).attr('value');
+  $(".button-box").show();
 
   if(x == 'fisic'){
     $(".pf-form").show();
@@ -21,35 +22,32 @@ $(".register-radio").click(function(){
 
 
 $(".register-input").blur(function(){
-  var value = $(this).attr('name')
+  var input = $(this)
+  var value = $(input).attr('name')
 
-  if($(this).val() === ''){
-    if(!$(this).next().hasClass('error')){
-      $(this).after("<span class='error'> "+ value +" obrigatório</span>")
+
+  if($(input).val() === ''){
+    if(!$(input).next().hasClass('error')){
+      $(input).after("<span class='error'> "+ value +" obrigatório</span>")
     }
   }else{
-    if($(this).next().hasClass('error')){
-      $(this).next().text('')
+    if($(input).next().hasClass('error')){
+      $(input).next().text('')
     }
   }
 
-  if($(this).hasClass('confirm-pass')){
+  if($(input).hasClass('confirm-pass')){
     var pass = $("#pass").val();
-    var passConfirm = $(this).val();
+    var passConfirm = $(input).val();
 
     if (pass !== passConfirm){
-      if(!$(this).next().hasClass('error_pass')){
-        $(this).after("<span class='error_pass'>confirmação de senha diferente</span>")
+      if(!$(input).next().hasClass('error_pass')){
+        $(input).after("<span class='error_pass'>confirmação de senha incorreta</span>")
       }
     }else {
-      $(this).next().text('')
+      if ($(input).next().hasClass('error_pass')){
+        $(input).next().text('')
+      }
     }
   }
-
-
 });
-
-
-
-
-// $("#xxx").inputmask("(99)[9]9999-9999", { placeholder: '' });

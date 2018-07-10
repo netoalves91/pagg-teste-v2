@@ -51,3 +51,7 @@ $(".register-input").blur(function(){
     }
   }
 });
+
+$("#register-form").submit(function(e){
+  e.preventDefault();
+});
